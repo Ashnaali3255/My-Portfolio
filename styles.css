@@ -243,6 +243,7 @@ transition: .5s ease;
 
 .portfolio {
     background: var(--second-bg-color);
+    
 }
 
 .portfolio h2 {
@@ -250,69 +251,80 @@ transition: .5s ease;
 }
 
 .portfolio-container {
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
+    place-items: center;
     gap: 2.5rem;
 }
 
-.portfolio-container .portfolio-box {
+.portfolio-container .portfolio-box { 
     position: relative;
     border-radius: 2rem;
-    box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
+    flex-direction: column; 
+    box-shadow: 0 0 10px #0ef;
+    border: 1px solid #0ef;
+    padding: 20px 10px 10px 10px;
+    height: 443px;
+    width: 480px;
+} 
+
+.portfolio-box {
+    width: 100%;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: all 0.7s ease;
 }
 
 .portfolio-box img {
     width: 100%;
-    transition: .5s ease;
+    object-fit: contain;
+    border-radius: 10px;
+    position: relative;
 }
 
 .portfolio-box:hover img {
-    transform: scale(1.1);
+    transform: translateY(-100px);
 }
-.portfolio-box .portfolio-layer {
+
+ .portfolio-layer {
     position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
-    justify-content: space-between; 
+    margin-top: 17rem;
+    padding: 10px 0;
+    height: 0; 
     text-align: center;
-    padding: 0 4rem;
-    transform: translateY(100%);
-    transition: .5s ease;
+    transition: all 1s ease;   
+    transform: translateY(230%);
 }
 
 .portfolio-box:hover .portfolio-layer {
-    transform: translateY(0);
-
+   transform: translateY(100%);
 }
 .portfolio-layer h4 {
-    font-size: 3rem;
-    color: rgb(39, 37, 37)
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .portfolio-layer p {
-    font-size: 1.6rem;
-    margin: .3rem 0 1rem;
-    color: rgb(1, 48, 22)
+    font-size: 15px;
 }
 
 .portfolio-layer a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
+    margin-top: 1rem;
+    width: 10rem;
     height: 5rem;
     background: var(--text-color);
-    border-radius: 50%;
 }
 
 .portfolio-layer a i {
