@@ -484,7 +484,10 @@ flex-wrap: wrap;
     margin-bottom: 3rem;
 }
 .portfolio-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+}
+.portfolio-layer {
+    margin-top: 20rem;
 }
 }
 
