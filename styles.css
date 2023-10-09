@@ -488,7 +488,7 @@ flex-wrap: wrap;
     grid-template-columns: 1fr;
 }
 .portfolio-layer {
-    margin-top: 20rem;
+    margin-top: 14rem;
 }
 }
 
@@ -496,6 +496,10 @@ flex-wrap: wrap;
     .portfolio-container {
         grid-template-columns: 1fr;
     }
+    
+.portfolio-container .portfolio-box {
+    width: 278px;
+}
 }
 
 @media (max-width: 450px) {
