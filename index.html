@@ -8,25 +8,28 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- custom styles -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
 <!-- header design -->
     <header class="header">
 <a href="#" class="logo">Portfolio</a>
-
- <i class='bx bx-menu' id="menu-icon"></i>
+ <i class='bx bx-menu' id="menu-icon" aria-label="Toggle navigation menu"></i>
 
   <nav class="navbar">
-    <a href="#home" class="active">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
+    <a href="#home" class="active" aria-label="Go to Home section">Home</a>
+    <a href="#about" aria-label="Go to About section">About</a>
+    <a href="#achievements" aria-label="Go to Achievements section">Achievements</a>
+    <a href="#services" aria-label="Go to Services section">Services</a>
+    <a href="#portfolio" aria-label="Go to Portfolio section">Portfolio</a>
+    <a href="#contact" aria-label="Go to Contact section">Contact</a>
 </nav>
 </header>
 
 <!-- home section -->
-
+<main>
 <section class="home" id="home">
     <div class="home-content">
         <h3>Hello, It's Me</h3>
@@ -74,9 +77,20 @@
         <i class='bx bxl-redux' ></i>
         <i class='bx bxl-postgresql' ></i>
         </div>
-
-    <a href="#" class="btn">Read More</a>
+    <a target="_blank" rel="noopener noreferrer" data-item="true" href="https://docs.google.com/document/d/1kL1SCk-TMb82iYUBGByJug4cPTXJOEyyKI0O_Jkuqr8/edit?usp=sharing" class="btn">Download Resume</a>
         </div>
+</section>
+<section class="services" id="achievements">
+    <div class="achievements">
+        <h2 class="heading"><span>Achievements</span></h2>
+        <ul class="services-container">
+            <i class='bx bx-code-alt'></i>
+            <li class="services-box"> 👩‍💻 Web Development Intern at <strong>DEN</strong> (June–July 2025)</li>
+            <i class='bx bx-code-alt'></i>
+            <li class="services-box">🏆 Participated in <strong>CodeSprint 2.0</strong> and built a portfolio in 24 hours!</li>
+            <i class='bx bx-code-alt'></i>
+            <li class="services-box">Genarative AI Course from ICodeGuru X Aspire X Pak Angels</li>
+</ul> 
 </section>
 
 <!-- Service Section -->
@@ -124,7 +138,7 @@
     <h2 class="heading">Latest <span>Projects</span></h2>
     <div class="portfolio-container">
         <div class="portfolio-box">
-            <img src="image/Fast-laner-race .png" alt="Project 1">
+            <img src="image/Fast-laner-race .png" alt="Fast Fast-Lane-Racer screenshot">
             <div class="portfolio-layer">
                 <h4>Fast Lane Racers</h4>
                 <p>Fast-Lane-Racer is a car booking website that allows users to easily book and reserve a ride and travel  
@@ -135,7 +149,7 @@
         </div>
 
         <div class="portfolio-box">
-            <img src="image/Budget-app.png" alt="Project 2">
+            <img src="image/Budget-app.png" alt="Budget-app screenshot">
             <div class="portfolio-layer">
                 <h4>Budget Application</h4>
                 <p>Budget Application Your Path to Financial Clarity. Effortlessly manage your finances with a sleek 
@@ -146,7 +160,7 @@
         </div>
 
         <div class="portfolio-box">
-            <img src="image/Food-app.png" alt="Project 3">
+            <img src="image/Food-app.png" alt="Food Application screenshot">
             <div class="portfolio-layer">
                 <h4>Food Application</h4>
                 <p>The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to 
@@ -157,7 +171,7 @@
         </div>
 
         <div class="portfolio-box">
-            <img src="image/Math Magician.png" alt="Project 4">
+            <img src="image/Math Magician.png" alt="Math-magician screenshot">
             <div class="portfolio-layer">
     <h4>Math Magician</h4>
     <p>In this project, I created a calculator which perform mathematics operations.A website with three dynamic pages. 
@@ -168,7 +182,7 @@
         </div>
 
         <div class="portfolio-box">
-            <img src="image/Space Traveller's Hub.png" alt="Project 5">
+            <img src="image/Space Traveller's Hub.png" alt="Space-Travelers-Hub screenshot">
             <div class="portfolio-layer">
                 <h4>Space Travellers Hub</h4>
 <p>This web application was built for a company that provides commercial and scientific space travel services. 
@@ -179,7 +193,7 @@ The real live data from the SpaceX API was used. It allows users to book rockets
         </div>
 
         <div class="portfolio-box">
-            <img src="image/Stock-Metrics.png" alt="Project 6">
+            <img src="image/Stock-Metrics.png" alt="Stock-Metrics-WebApp screenshot">
             <div class="portfolio-layer">
                 <h4>Stock Metrics WebApp</h4>
 <p>Companies is a React and Redux SPA application that displays interesting information about various companies in 
@@ -207,6 +221,7 @@ The real live data from the SpaceX API was used. It allows users to book rockets
     <input type="submit" value="Send Message" class="btn">
 </form>
 </section>
+</main>
 <!-- Footer  -->
 
 <footer class="footer">

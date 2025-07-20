@@ -152,6 +152,7 @@ box-shadow: 0 0 1rem var(--main-color);
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
+    margin-top: 1rem
 }
 
 .btn:hover {
@@ -191,6 +192,7 @@ box-shadow: 0 0 1rem var(--main-color);
 
 .skills h3 {
     color: var(--text-color);
+    margin-bottom: 1rem;
 }
 
  .skills {
