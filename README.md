@@ -18,7 +18,7 @@
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 [Responsive Portfolio] <a name="about-project"></a>
-I create a Portfolio, which can help to easy explorate my profile a.
+I create a Portfolio, which can help to easy explorate my profile.
 
 ## 🛠 Built With <a name="built-with">
 #Tech Stack
